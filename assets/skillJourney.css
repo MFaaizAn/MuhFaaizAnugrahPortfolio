@@ -1,0 +1,466 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Google Sans Flex", sans-serif;
+    user-select: none;
+    -webkit-user-drag: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E8EDF2;
+}
+
+.navBarContainer {
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+    background-color: #E8EDF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+    width: 100%;
+}
+
+.navLinks {
+    font-size: 1.3rem;
+    display: flex;
+    list-style: none;
+    gap: 90px;
+    margin-left: 15%;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+}
+
+.navLinks a:hover {
+    color: #E8EDF2;
+    background-color: #2C3947;
+    border-radius: 4px;
+}
+
+.documentationContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 7%;
+    padding: 40px;
+}
+
+.docImgContainer {
+    margin-top: 5%;
+}
+.h1Doc {
+    font-size: 2.5rem;
+}
+
+.pDoc {
+    text-align:center;
+    max-width: 700px;
+    line-height: 1.8;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-left: 25%;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #547A95;
+    width: 150px;
+    height: 50px;
+    margin: 50px 50px;
+    border-radius: 4px;
+}
+
+.contactBtn a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.contactBtn a:hover {
+    color: gray;
+}
+
+.contactBtn:hover {
+   transform: scale(1);
+    background-color: #2C3947;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2A56D;
+    gap: 20px;
+    padding: 30px 50px;
+    font-weight: 300;
+}
+
+@media (max-width: 768px){
+     .navBarContainer {
+    flex-direction: column;
+    padding: 10px;
+    }
+
+    .navLinks {
+    margin-left: 0;
+     gap: 15px;
+     font-size: 1rem;
+    margin-top: 10px;
+    }
+
+    .documentationContainer {
+    margin-top: 35%;
+    }
+    .docImgContainer {
+    margin-top: 30%;
+    }
+
+    .pDoc {
+    font-size: 1.1rem;
+    margin-left: 0;
+    width: 100%;    
+    }
+
+    .imgDoc {
+    width: 90%;
+    height: auto;
+    }
+
+    .btnContainer {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .contactBtn {
+    margin: 10px 0;
+    width: 200px;
+    }
+
+    footer {
+    flex-direction: column;
+    gap: 10px;  
+    text-align: center;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    
+    .navBarContainer {
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+
+    .faiLogo {
+        width: 150px;
+    }
+
+    .navLinks {
+        margin-left: 0;
+        gap: 10px;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .navLinks a {
+        padding: 5px 8px;
+    }
+
+    .heroProfileContainer {
+        padding: 140px 20px 40px 20px;
+    }
+
+    .h1FaaizName {
+        font-size: 1.6rem;
+    }
+
+    .pFaaizExplanation {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    .projectExampleContainer {
+        padding: 40px 15px;
+    }
+
+    .projectExampleContainer h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .projectExampleContainer img {
+        width: 100%;
+        margin: 15px 0;
+        border-radius: 8px;
+    }
+
+
+    .contactContainer {
+        padding: 40px 10px;
+    }
+
+    .btnContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contactBtn {
+        margin: 0;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.8rem;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-height: 800px) {
+
+    .heroProfileContainer {
+        padding: 150px 20px 80px 20px; 
+        min-height: 85vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .h1FaaizName {
+        font-size: 1.8rem;
+        margin-top: 5%;
+    }
+
+    .pFaaizExplanation {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .projectExampleContainer img {
+        width: 95%;
+        margin: 20px 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .btnContainer {
+        gap: 20px;
+    }
+
+    .contactBtn {
+        width: 85%;
+        height: 55px;
+    }
+}
+
+/* Media Query Khusus HP Layar Panjang (Contoh: Realme C55) */
+@media screen and (max-width: 450px) and (min-height: 800px) {
+    
+    /* 1. PERBAIKAN NAVBAR & NAVLINKS */
+    .navBarContainer {
+        flex-direction: column; /* Tumpuk logo di atas, menu di bawah */
+        padding: 12px 10px;
+        justify-content: center;
+    }
+
+    .faiLogo {
+        width: 140px; /* Perkecil ukuran logo agar proporsional */
+    }
+
+    .navLinks {
+        margin-left: 0; /* Reset margin 15% desktop agar kembali ke tengah */
+        gap: 12px;      /* Perkecil jarak antar menu agar pas di lebar HP */
+        font-size: 0.95rem; /* Sesuaikan ukuran font teks menu */
+        margin-top: 8px; /* Beri sedikit jarak di bawah logo */
+    }
+
+    .navLinks a {
+        padding: 4px 8px; /* Perkecil ruang klik menu agar tidak sumpek */
+    }
+
+    /* 2. HERO PROFILE SECTION */
+    .heroProfileContainer {
+        /* Padding atas ditambah (150px) agar teks nama tidak tertutup navbar fixed yang melayang */
+        padding: 150px 20px 80px 20px; 
+        min-height: 85vh; /* Memanfaatkan layar panjang 6,72 inci Realme agar konten terlihat penuh */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .h1FaaizName {
+        font-size: 1.7rem;
+        margin-top: 5%;
+    }
+
+    .pFaaizExplanation {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        text-align: left; /* Rata kiri agar lebih nyaman dibaca di layar ramping */
+    }
+
+    /* 3. PROJECT SECTION */
+    .projectExampleContainer {
+        padding: 50px 15px;
+    }
+
+    .projectExampleContainer h1 {
+        font-size: 1.6rem;
+    }
+
+    .projectExampleContainer img {
+        width: 95%; /* Gambar melebar otomatis mengikuti layar horizontal HP */
+        margin: 15px 0;
+        border-radius: 8px;
+    }
+
+    /* 4. CONTACT SECTION */
+    .btnContainer {
+        flex-direction: column; /* Tombol contact berjejer ke bawah */
+        align-items: center;
+        gap: 15px; /* Jarak vertikal antar tombol */
+    }
+
+    .contactBtn {
+        margin: 0; /* Hapus margin 50px dari setingan desktop */
+        width: 100%; 
+        max-width: 280px; /* Batasi lebar maksimal tombol agar tidak terlalu melar */
+        height: 52px; /* Dibuat sedikit tebal agar mudah di-tap jempol */
+    }
+
+    /* 5. FOOTER */
+    footer {
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 8px;
+        font-size: 0.85rem;
+    }
+}
+
+/* ============================================================
+   UNIVERSAL MOBILE RESPONSIVE (300px - 800px)
+   Target: Skill Journey Page (Mobile & Chrome Emulator)
+   ============================================================ */
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+
+    /* 1. Navbar Adjustment */
+    .navBarContainer {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+
+    .faiLogo {
+        width: 120px; /* Logo lebih kecil di HP */
+    }
+
+    .navLinks {
+        margin-left: 0;
+        gap: 15px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* 2. Documentation Container Adjustment */
+    .documentationContainer {
+        /* Padding atas ditambah agar judul "My Journey" tidak tertutup Navbar */
+        padding: 160px 20px 40px 20px; 
+        margin-top: 0; /* Mengganti margin-top % dengan padding agar lebih aman */
+    }
+
+    .h1Doc {
+        font-size: 1.8rem;
+    }
+
+    .h1DocT {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .pDoc {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify; /* Terlihat lebih rapi untuk teks panjang di HP */
+        margin-left: 0; /* Reset margin 25% desktop */
+        max-width: 100%;
+    }
+
+    /* 3. Image Documentation Adjustment */
+    .imgDoc {
+        width: 100%; /* Gambar dokumentasi memenuhi lebar layar */
+        height: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .docImgContainer {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    /* 4. Contact & Buttons Adjustment */
+    .contactContainer {
+        padding: 40px 20px;
+    }
+
+    .btnContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .contactBtn {
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+    }
+
+    /* 5. Footer Adjustment */
+    footer {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* Khusus layar sangat ramping (Galaxy Fold / 320px) */
+@media screen and (max-width: 320px) {
+    .h1Doc {
+        font-size: 1.5rem;
+    }
+    .navLinks {
+        gap: 8px;
+        font-size: 0.8rem;
+    }
+}
